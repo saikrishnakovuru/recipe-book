@@ -1,0 +1,9 @@
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background-color: lightgoldenrodyellow;
+}
+
+.container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: lightgoldenrodyellow;
+}
