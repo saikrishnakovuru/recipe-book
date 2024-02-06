@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ShoppingListService} from "../shopping-list.service";
+import {Ingredient} from "../../shared/ingredient.model";
 
 @Component({
   selector: 'app-shopping-edit',
@@ -17,7 +18,8 @@ export class ShoppingEditComponent implements OnInit {
   public onAddButtonClick(ingredientName: HTMLInputElement, ingredientQuantity: HTMLInputElement) {
     if (ingredientName.value !== '' && ingredientQuantity.value !== '') {
       // this.passIngredients.emit(new Ingredient(this.ingredientName, +this.ingredientQuantity));
-      this.shoppingListService.setIngredient(ingredientName.value, +ingredientQuantity.value);
+      // this.shoppingListService.setIngredient(ingredientName.value, +ingredientQuantity.value);
+      this.shoppingListService.addIngredient(new Ingredient(ingredientName.value, +ingredientQuantity.value));
     }
   }
 

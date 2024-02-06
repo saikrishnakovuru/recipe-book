@@ -14,8 +14,9 @@ export class ShoppingListService {
         return this.ingredients;
     }
 
-    public setIngredient(ingredientName: string, ingredientQuantity: number): void {
-        this.ingredients.push(new Ingredient(ingredientName, ingredientQuantity));
+    public addIngredient(ingredient: Ingredient) {
+        if (!this.ingredients.includes(ingredient))
+            this.ingredients.push(ingredient);
     }
 
 }
