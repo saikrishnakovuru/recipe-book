@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-xs-12">
-    <img ngSrc="{{selectedRecipe.imagePath}}" alt="" class="img-responsive">
+    <img [src]="selectedRecipe.imagePath" alt="" class="img-responsive">
   </div>
 </div>
 <div class="row">
@@ -18,8 +18,8 @@
       </button>
       <ul class="dropdown-menu">
         <li><a style="cursor: pointer" (click)="onToShoppingList()">To Shopping List</a></li>
-        <li><a href="#">Edit Recipe</a></li>
-        <li><a href="#">Delete Recipe</a></li>
+        <li><a style="cursor: pointer" (click)="onEditRecipe()">Edit Recipe</a></li>
+        <li><a style="cursor: pointer">Delete Recipe</a></li>
       </ul>
     </div>
   </div>

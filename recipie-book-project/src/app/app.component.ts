@@ -6,10 +6,10 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public feature: string;
-
-  recipesClicked(feature: string): void {
-    this.feature = feature;
-  }
+  // public feature: string;
+  //
+  // recipesClicked(feature: string): void {
+  //   this.feature = feature;
+  // }
 
 }

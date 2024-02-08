@@ -1,13 +1,15 @@
-<app-header (isFeatureClicked)="recipesClicked($event)"
-></app-header>
+<!--<app-header (isFeatureClicked)="recipesClicked($event)"-->
+<!--&gt;</app-header>-->
+<app-header></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      @if (feature === 'recipes') {
-        <app-recipes></app-recipes>
-      } @else {
-        <app-shopping-list></app-shopping-list>
-      }
+      <!--      @if (feature === 'recipes') {-->
+      <!--        <app-recipes></app-recipes>-->
+      <!--      } @else {-->
+      <!--        <app-shopping-list></app-shopping-list>-->
+      <!--      }-->
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
